@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="view" hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" vgap="5.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="Servidor SMPT:" />
+      <TextField fx:id="nombreServidor" promptText="Nombre o IP del servidor" GridPane.columnIndex="1" GridPane.columnSpan="4" />
+      <TextField fx:id="puertoServidor" promptText="Puerto" GridPane.columnIndex="5" />
+      <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="Usar conexión SSL:" GridPane.rowIndex="1" />
+      <CheckBox fx:id="usaSSL" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="Remitente (From):" GridPane.rowIndex="2" />
+      <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="Destinatario (To):" GridPane.rowIndex="3" />
+      <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="Asunto (Subject):" GridPane.rowIndex="4" />
+      <TextField fx:id="emailRemitente" promptText="Email del remitente" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="2" />
+      <PasswordField fx:id="passwordRemitente" promptText="Contrseña" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+      <TextField fx:id="emailDestinatario" promptText="Email del destinatario" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="3" />
+      <TextField fx:id="asuntoEmail" promptText="Asunto del mensaje" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="4" />
+      <TextArea fx:id="mensajeEmail" prefHeight="200.0" prefWidth="200.0" promptText="Mensaje" GridPane.columnSpan="6" GridPane.rowIndex="5" />
+      <Button fx:id="enviarButton" alignment="CENTER" defaultButton="true" mnemonicParsing="false" text="Enviar" GridPane.columnIndex="6" />
+      <Button fx:id="vaciarButton" alignment="CENTER" mnemonicParsing="false" text="Vaciar" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+      <Button fx:id="cerrarButton" alignment="CENTER" mnemonicParsing="false" text="Cerrar" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>
