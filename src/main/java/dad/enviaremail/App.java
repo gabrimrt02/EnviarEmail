@@ -12,7 +12,6 @@ public class App extends Application{
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        
         App.primaryStage = primaryStage;
 
         controller = new Controller();
@@ -21,7 +20,6 @@ public class App extends Application{
         primaryStage.setScene(new Scene(controller.getView()));
         primaryStage.getIcons().add(new Image(App.class.getResourceAsStream("/images/email-send-icon-32x32.png")));
         primaryStage.show();
-
     }
 
     public static void main(String[] args) {
