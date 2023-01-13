@@ -6,7 +6,6 @@ import java.util.ResourceBundle;
 
 import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.Email;
-import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.SimpleEmail;
 
 import javafx.concurrent.Task;
@@ -23,7 +22,6 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.GridPane;
-import javafx.stage.Stage;
 
 public class Controller implements Initializable {
 
